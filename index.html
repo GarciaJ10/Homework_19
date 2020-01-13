@@ -7,37 +7,42 @@
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet">
     <title>Jesus Garcia</title>
 <!-- JavaScript for Hamburger Menu -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Font -->
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <!--Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">JG | UX/UI Designer</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Work <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
-      </div>
-    </div>
-  </nav>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="#">JG | UX/UI Designer</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#MyWork">My Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#AboutMe">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#LetsChat">Let's Chat</a>
+                </li>
+              </ul>
+          </div>  
+      </nav>
 <!--Jumbotron-->
 <div class="jumbotron">
-    <h1 class="display-4">Thanks For Visiting!</h1>
-    <p class="lead">My path within the UX/UI realm has not been long-lived, but it is one that's 
-        brought value to myself by taking me out of my comfort zone and learned 
-        new technologies.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">View My Work</a>
+    <h1 class="display-4">Hi, I'm Jesus!</h1>
+    <h2>(No, not that one. Another one)</h2>
+    <p class="lead">I have not been designing much since I'm fairly new to the industry. Here's some of my work. I'd love to see what you think, so please feel free to send me a message. Hopefully we can connect.</p>
   </div>
  <!-- Cards -->  
  <div class="container">
@@ -57,7 +62,7 @@
             <a href="https://drive.google.com/file/d/1V5NonZfVApSzajO1hvc7SIXCQ-yLjMT-/view?usp=sharing"><img src="images/sun-daytime-design.jpg" class="card-img-top" alt="SOL! user syncing"></a>
             <div class="card-body">
               <h5 class="card-title">SOL!</h5>
-              <p class="card-text">SOL! is the app that helps people be mindful and achieve a lifestyle of improved health and wellness through time spent in the sun.</p>
+              <p class="card-text">SOL! helps people be mindful and achieve a lifestyle of improved health and wellness through time spent in the sun.</p>
               <a href="https://drive.google.com/file/d/1V5NonZfVApSzajO1hvc7SIXCQ-yLjMT-/view?usp=sharing" class="btn btn-primary">SOL! Case Study</a>
             </div>
         </div>
@@ -124,6 +129,43 @@
                 </div> 
             </div>        
         </div>
+<!-- Contact Form-->
+<form>
+    <div class="container">
+    <h3>I'd love to hear from you!</h3>
+    <hr>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="name" class="form-control" id=NameInput placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id=EmailInput placeholder="Enter Email">
+    </div>
+    <div class="form-group">
+      <label for="Message">Message</label>
+      <textarea class="form-control" id="Message" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+  </div>
+  </form>
+<!--Modal-->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">I greatly appreciate your message</h3>
+      </div>
+      <div class="modal-body">
+        <h5>Will be in touch with you promptly!</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      </div>
+      </div>
+    </div>
+
 <!--Blockquote -->
 <blockquote class="blockquote text-center">
     <p class="mb-0">From mistakes one gets free lessons.</p>
@@ -138,8 +180,6 @@
         <a href="https://medium.com/@garciaj10"><img src="images/medium.svg" alt="Medium Profile" id="medium"></a>
     </div>
     </div>
-
-   
- 
 </body>
-</html>            
+</html>    
+
