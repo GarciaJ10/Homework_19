@@ -15,36 +15,38 @@
 <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
 </head>
-<body>
-
 <!--Navigation-->
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-          <a class="navbar-brand" href="#">JG | UX/UI Designer</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#MyWork">My Work</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#AboutMe">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#LetsChat">Let's Chat</a>
-                </li>
-              </ul>
-          </div>  
-      </nav>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">JG | UX/UI Designer</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#MyWork">My Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutMe">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Let'sChat">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <!--Jumbotron-->
-<div class="jumbotron">
-    <h1 class="display-4">Hi, I'm Jesus!</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Hi, I'm Jesus!</h1>
     <h2>(No, not that one. Another one)</h2>
     <p class="lead">I have not been designing much since I'm fairly new to the industry. Here's some of my work. I'd love to see what you think, so please feel free to send me a message. Hopefully we can connect.</p>
   </div>
- <!-- Cards -->  
+</div>
+ <!-- Title --> 
+ <h2 id="MyWork">My Work</h2>
+  <!-- Cards --> 
  <div class="container">
     <div class="row">
         <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
@@ -94,7 +96,7 @@
 <!-- Image and text -->
         <div class="cardContainer col-lg-12 col-md-12 col-sm-12">
             <div class="card">
-                <div class="aboutMe">
+                <div id="aboutMe">
                     <div class="titleBlock"><h1 class="display-4 aboutTitle">About Me</h1></div>
                     
                     <p class="lead">My name is Jesus Garcia, and I am a native of Mexico City, Mexico. Learning about from 
@@ -132,7 +134,7 @@
 <!-- Contact Form-->
 <form>
     <div class="container">
-    <h3>I'd love to hear from you!</h3>
+    <h3 id="Let'sChat">I'd love to hear from you!</h3>
     <hr>
     <div class="form-group">
       <label for="name">Name</label>
@@ -174,6 +176,7 @@
 <!-- First Footer -->
     <div class="Footer">
         <h4 id="Contact">Contact: GarciaJ10@gmail.com</h4>
+        <b>
     <div class="Icons">
         <a href="https://www.linkedin.com/in/jesus-garcia-/"><img src="images/linkedin.svg" alt="LinkedIn Profile" id="linkedin"></a>
         <a href="https://www.instagram.com/littlebabyheyzus/"><img src="images/instagram.svg" alt="Instagram Profile" id="instagram"></a>
